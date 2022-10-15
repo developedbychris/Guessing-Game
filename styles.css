@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+}
+
+body {
+  color: white;
+}
+
+.row {
+  position: relative;
+  justify-content:center;
+  justify-items: center;
+  
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  display: grid;
+}
+button{
+  border: none;
+  padding: 0;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+.box {
+  position: relative;
+  background-color: black;
+  color: white;
+  border-radius: 15%;
+  margin: 20px 20px;
+  outline: solid white;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Alfa Slab One';
+  font-size: 45px;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.box:hover{
+    border-color: #9ecaed;
+    box-shadow: 0 0 50px #9ecaed;
+    outline: none;
+}
+
+.head-container{
+  margin-top: 10px;
+  text-align: center;
+  width: auto;
+  user-select: none;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Staatliches', sans-serif, cursive;
+    font-size: 50px;
+    margin: 0;
+    user-select: none;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Staatliches', sans-serif, cursive;
+  margin-top: 0;
+  display: inline-block;
+  font-size: 30px;
+  margin: auto 0;
+  user-select: none;
+  
+}
+#icon-twit{
+ 
+  /* fill because its an svg element */
+ fill: white;
+ padding-top: 8px;
+}
+
+#icon-git{
+  fill: white;
+  
+}
+
+#icon-twit:hover{
+  fill: #1d9bf0;
+}
+#icon-git:hover{
+  fill: gray;
+}
+
+#rounds, #points{
+  font-size: 2.2rem;
+  font-style: oblique;
+  text-decoration: underline;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+}
+#points{
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+#results{
+    text-align: center;
+    font-family:'Baloo 2', sans-serif, cursive;
+    font-size: 25px;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+#guesses, #firstTry, #total, #luck, #correct, #tries{
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Baloo 2', sans-serif, cursive;
+    font-size: 22px;
+    user-select: none;
+}
+
+.container{
+  height: 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#rButton{
+  font-family:'Baloo 2', sans-serif, cursive;
+  font-size: 25px;
+  padding: 10px 20px;
+  border:solid white 2px ;
+  border-radius: 5%;
+  background-color: black;
+  color: white;
+  user-select: none;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+#rButton:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px #9ecaed;
+  outline: none;
+}
+
+
+#firstTry{
+  color: #4200c7;
+}
+
+#correct{
+  color: #00ff26;
+}
+
+#total, #luck{
+  color: #bfbfbf;
+}
+
